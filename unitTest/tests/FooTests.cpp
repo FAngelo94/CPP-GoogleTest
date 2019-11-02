@@ -11,10 +11,11 @@ namespace {
 	class FooTest : public ::testing::Test {
 	protected:
 		Foo foo;
+		Foo foo;
 	};
 	TEST_F(FooTest, Foo) {
-		ASSERT_TRUE(foo.foo());
-		ASSERT_TRUE(foo.foo());
+		EXPECT_TRUE(foo.foo());
+		EXPECT_EQ(foo.sum(2,3),5);
 	};
 }
 

@@ -12,7 +12,8 @@ class Foo {
 public:
 	Foo();
 	virtual ~Foo();
-	bool foo(void) {return false;}
+	bool foo(void) {return true;}
+	int sum(int num1, int num2);
 };
 
 #endif /* FOO_H_ */

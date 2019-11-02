@@ -16,3 +16,6 @@ Foo::~Foo() {
 	// TODO Auto-generated destructor stub
 }
 
+int Foo::sum(int num1, int num2) {
+	return num1 + num2;
+}
